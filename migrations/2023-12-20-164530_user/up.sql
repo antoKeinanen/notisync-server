@@ -1,0 +1,7 @@
+-- Your SQL goes here
+CREATE TABLE users (
+  uuid UUID PRIMARY KEY NOT NULL UNIQUE,
+  username VARCHAR NOT NULL UNIQUE,
+  email VARCHAR NOT NULL UNIQUE,
+  password VARCHAR NOT NULL
+);

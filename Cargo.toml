@@ -1,0 +1,23 @@
+[package]
+name = "notisync-server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rocket = { version = "0.5.0", features = ["json", "uuid"] }
+diesel = { version = "2.1.4", features = ["postgres", "r2d2", "uuid"] }
+dotenvy = "0.15"
+serde = "1.0.193"
+argon2 = "0.5.2"
+
+[dependencies.rocket_dyn_templates]
+features = ["handlebars"]
+
+[dependencies.rocket_contrib]
+version = "0.4.11"
+default-features = false
+features = ["json"]
+
+[dependencies.uuid]
+version = "1.6.1"
+features = ["v4", "fast-rng", "macro-diagnostics"]
